@@ -43,8 +43,8 @@ public class GameLevelService {
         Body tempBody = BodyHelperService.createBody(
             (j * BRICK_WIDTH + 0.5f * BRICK_WIDTH),
             (float) Gdx.graphics.getHeight() - 30f - (BRICK_HEIGHT * (1f + i)),
-            BRICK_WIDTH,
-            BRICK_HEIGHT,
+            BRICK_WIDTH-4,
+            BRICK_HEIGHT-4,
             true,
             world);
         Brick tempBrick = new Brick(tempBody, currentLevel[i][j]);
